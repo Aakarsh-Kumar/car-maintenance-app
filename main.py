@@ -24,7 +24,7 @@ miles_between_changes = 3000
 def check_oil_change():
     miles = miles_entry.get()
     miles = int(miles)
-    last_miles = lastmiles_entry.get()
+    last_miles = last_miles_entry.get()
     last_miles = int(last_miles)
     miles_till_oilchange = miles_between_changes - (miles - last_miles)
     if miles_till_oilchange == 0:
